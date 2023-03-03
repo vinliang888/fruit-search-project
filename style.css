@@ -2,43 +2,68 @@
   /* box-sizing: border-box; */
 }
 
-:focus {
- /* TODO */
-}
 
+html {
+  width: 100%;
+  height: 100%;
+}
 body {
-  /* TODO */
+  background: linear-gradient(to right, #fdd520, #d82f11);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 input {
- /* TODO */
+  
+  border:0;
+  border-bottom: 2px solid red;
 }
 
+input:focus {
+  outline:none;
+  border: 2px solid rgb(250, 36, 36);
+ }
+
 .search-container {
- /* TODO */
+  margin-top: 30%;
+  
+
 }
 .search-container input,
 .search-container .suggestions {
-  /* TODO */
+
+  width: 200px;
+  padding: auto; 
+
+ 
 }
 .search-container input {
- /* TODO */
+  background-color: rgba(255, 255, 255, 0.341);
+  padding: 10px; 
+
 }
 .search-container .suggestions {
-   /* TODO */
+  border: 0;
+
 }
 
 ul {
-  /* TODO */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.341);
+  width: 220px;
 }
 ul.has-suggestions {
   /* TODO */
 }
 ul li {
-  /* TODO */
+  padding: 10px 0 10px 10px;
 }
 ul li:hover {
-  /* TODO */
+  background-color: #d82f1171;
 }
 
 input {
