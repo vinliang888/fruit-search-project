@@ -27,8 +27,7 @@ input:focus {
  }
 
 .search-container {
-  margin-top: 30%;
-  
+  margin-top: 20%;
 
 }
 .search-container input,
@@ -55,10 +54,13 @@ ul {
   margin: 0;
   background-color: rgba(255, 255, 255, 0.341);
   width: 220px;
+  max-height: 250px;
+  overflow: auto;
 }
-ul.has-suggestions {
-  /* TODO */
+ul.suggestions {
+  
 }
+
 ul li {
   padding: 10px 0 10px 10px;
 }

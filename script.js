@@ -55,9 +55,10 @@ function showSuggestions(results, inputVal) {
 	results.forEach( (result) => {
 		let newLi = document.createElement("li");
 		for (let i = 0; i < result['val'].length;) {
-			if (result['val'].slice(i, i+inputVal.length).toLowerCase() === inputVal.toLowerCase()) {
+			let resultSubString = result['val'].slice(i, i+inputVal.length);
+			if (resultSubString.toLowerCase() === inputVal.toLowerCase()) {
 				let newBold = document.createElement('b');
-				newBold.innerText = result['val'].slice(i, i+inputVal.length);
+				newBold.innerText = resultSubString;
 				newLi.appendChild(newBold);
 				i += inputVal.length;
 			} else {
